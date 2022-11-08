@@ -46,7 +46,7 @@ public class Login {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(Color.BLUE);
+		frame.getContentPane().setBackground(new Color(0, 0, 128));
 		frame.setBounds(100, 100, 785, 414);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
