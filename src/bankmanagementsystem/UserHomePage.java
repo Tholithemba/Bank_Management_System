@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class UserHomePage {
 
@@ -44,16 +47,37 @@ public class UserHomePage {
 		frame.getContentPane().setLayout(null);
 		
 		JButton btnViewBalance = new JButton("View Balance");
-		btnViewBalance.setBounds(138, 43, 169, 33);
+		btnViewBalance.addMouseListener(new MouseAdapter() {
+			public void mouseClicked(MouseEvent e) {
+				//ViewBalance new =  ViewBalance();
+			}
+		});
+		btnViewBalance.setFont(new Font("Dialog", Font.BOLD, 20));
+		btnViewBalance.setForeground(Color.WHITE);
+		btnViewBalance.setBackground(Color.GREEN);
+		btnViewBalance.setBounds(122, 41, 198, 33);
 		frame.getContentPane().add(btnViewBalance);
 		
 		JButton btnDeposit = new JButton("Deposit");
-		btnDeposit.setBounds(138, 105, 169, 33);
+		btnDeposit.setFont(new Font("Dialog", Font.BOLD, 20));
+		btnDeposit.setForeground(Color.WHITE);
+		btnDeposit.setBackground(Color.GREEN);
+		btnDeposit.setBounds(122, 86, 198, 33);
 		frame.getContentPane().add(btnDeposit);
 		
 		JButton btnWithdraw = new JButton("Withdraw");
-		btnWithdraw.setBounds(138, 162, 169, 33);
+		btnWithdraw.setFont(new Font("Dialog", Font.BOLD, 20));
+		btnWithdraw.setForeground(Color.WHITE);
+		btnWithdraw.setBackground(Color.GREEN);
+		btnWithdraw.setBounds(122, 176, 198, 33);
 		frame.getContentPane().add(btnWithdraw);
+		
+		JButton btnTransfer = new JButton("Transfer");
+		btnTransfer.setForeground(Color.WHITE);
+		btnTransfer.setFont(new Font("Dialog", Font.BOLD, 20));
+		btnTransfer.setBackground(Color.GREEN);
+		btnTransfer.setBounds(122, 131, 198, 33);
+		frame.getContentPane().add(btnTransfer);
 	}
 
 }

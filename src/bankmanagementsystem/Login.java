@@ -3,11 +3,9 @@ package bankmanagementsystem;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import java.awt.BorderLayout;
 import java.awt.Color;
 import javax.swing.JLabel;
 import java.awt.Font;
-import javax.swing.JTextPane;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
@@ -73,7 +71,7 @@ public class Login {
 		btnLogin.setBackground(new Color(124, 252, 0));
 		btnLogin.setForeground(new Color(255, 255, 255));
 		btnLogin.setFont(new Font("Dialog", Font.BOLD, 16));
-		btnLogin.setBounds(271, 291, 186, 25);
+		btnLogin.setBounds(284, 288, 186, 25);
 		frame.getContentPane().add(btnLogin);
 	}
 }
